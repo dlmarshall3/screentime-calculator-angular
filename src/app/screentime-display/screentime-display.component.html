@@ -1,0 +1,14 @@
+<div class="container">
+    <div><b>Per week:</b> {{weeklyScreentime}} hours OR {{weeklyScreentime/24 | number}} days</div>
+    <div><b>Per month:</b> {{monthlyScreentime}} hours OR {{monthlyScreentime/24 | number}} days</div>
+    <div><b>Per year:</b> {{yearlyScreentime}} hours OR {{yearlyScreentime/24 | number}} days</div>
+    <div>
+        <b>For the next:</b>
+        <ul>
+            <li><b>5 years:</b> {{fiveYearScreentime}} hours OR {{fiveYearScreentime/24 | number}} days OR {{fiveYearScreentime/24/365 | number}} years</li>
+            <li><b>10 years:</b> {{tenYearScreentime}} hours OR {{tenYearScreentime/24 | number}} days OR {{tenYearScreentime/24/365 | number}} years</li>
+            <li><b>25 years:</b> {{twentyfiveYearScreentime}} hours OR {{twentyfiveYearScreentime/24 | number}} days OR {{twentyfiveYearScreentime/24/365 | number}} years</li>
+            <li><b>50 years:</b> {{fiftyYearScreentime}} hours OR {{fiftyYearScreentime/24 | number}} days OR {{fiftyYearScreentime/24/365 | number}} years</li>
+        </ul>
+    </div>
+</div>

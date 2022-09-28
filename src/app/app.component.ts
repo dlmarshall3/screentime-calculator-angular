@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'screen-time';
+
+  dailyScreentime: number = 0;
+  
+  passAlongScreentime(screentime: number){
+    this.dailyScreentime = screentime;
+  }
+
+
 }
