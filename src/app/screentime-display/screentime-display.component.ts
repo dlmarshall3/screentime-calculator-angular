@@ -15,7 +15,6 @@ export class ScreentimeDisplayComponent implements OnChanges {
   tenYearScreentime: number = 0;
   twentyfiveYearScreentime: number = 0;
   fiftyYearScreentime: number = 0;
-  
 
   constructor() { }
 
