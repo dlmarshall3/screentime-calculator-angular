@@ -36,6 +36,14 @@
               <p class="card-text">{{yearlyScreentime/24 | roundingPipe}} days</p>
             </div>
         </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title">Three years:</h5>
+              <p class="card-text">{{threeYearScreenTime | roundingPipe}} hours</p>
+              <p class="card-text">{{threeYearScreenTime/24 | roundingPipe}} days</p>
+              <p class="card-text">{{threeYearScreenTime/24/365 | roundingPipe}} years</p>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="card" style="width: 15rem;">
