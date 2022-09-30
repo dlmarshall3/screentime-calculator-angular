@@ -1,21 +1,25 @@
-import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnChanges, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-screentime-form',
   templateUrl: './screentime-form.component.html',
   styleUrls: ['./screentime-form.component.css']
 })
-export class ScreentimeFormComponent implements OnInit {
+export class ScreentimeFormComponent implements OnChanges {
   @ViewChild('dailyInput', {static:false}) dailyInputRef!: ElementRef;
   @Output() screentimeSubmitted = new EventEmitter();
 
+  rangeValue: number = 0;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnChanges(): void {
+    
   }
 
   onButtonClicked(){
-    const dailyScreentime = this.dailyInputRef.nativeElement.value;
+    console.log('test');
+    const dailyScreentime = this.rangeValue;
     this.screentimeSubmitted.emit(dailyScreentime);
   }
 

@@ -6,15 +6,16 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
   styleUrls: ['./screentime-display.component.css']
 })
 export class ScreentimeDisplayComponent implements OnChanges {
+    weeklyScreentime: number = 0;
+    monthlyScreentime: number = 0;
+    yearlyScreentime: number = 0;
+    fiveYearScreentime: number = 0;
+    tenYearScreentime: number = 0;
+    twentyfiveYearScreentime: number = 0;
+    fiftyYearScreentime: number = 0;
 
   @Input() dailyScreentime: number = 0;
-  weeklyScreentime: number = 0;
-  monthlyScreentime: number = 0;
-  yearlyScreentime: number = 0;
-  fiveYearScreentime: number = 0;
-  tenYearScreentime: number = 0;
-  twentyfiveYearScreentime: number = 0;
-  fiftyYearScreentime: number = 0;
+  
 
   constructor() { }
 

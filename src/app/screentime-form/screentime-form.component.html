@@ -1,5 +1,5 @@
 <div class="container">
-    <form action="">
+    <!-- <form action="">
             <div class="row">
                 <label for="">Average Daily Screentime (hrs): </label>
                 <input type="text" #dailyInput>
@@ -7,5 +7,11 @@
             <div class="row">
                 <button (click)="onButtonClicked()" type="button">Calculate time</button>
             </div>
-    </form>
+    </form> -->
+    <label for="screentimeRange" class="form-label">Average Daily Screentime (in hours):</label>
+    <input type="range" class="form-range" min="0" max="12" step="0.5" name="screentimeRange" [(ngModel)]="rangeValue">
+    <p>{{rangeValue}}</p>
+    <div class="row">
+        <button (click)="onButtonClicked()" type="button">Calculate time</button>
+    </div>
 </div>

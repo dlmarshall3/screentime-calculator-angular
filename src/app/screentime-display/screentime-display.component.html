@@ -1,14 +1,74 @@
-<div class="container">
-    <div><b>Per week:</b> {{weeklyScreentime}} hours OR {{weeklyScreentime/24 | number}} days</div>
-    <div><b>Per month:</b> {{monthlyScreentime}} hours OR {{monthlyScreentime/24 | number}} days</div>
-    <div><b>Per year:</b> {{yearlyScreentime}} hours OR {{yearlyScreentime/24 | number}} days</div>
+<!-- <div class="container">
+    <div><b>Per week:</b> {{weeklyScreentime}} hours OR {{weeklyScreentime/24 | roundingPipe}} days</div>
+    <div><b>Per month:</b> {{monthlyScreentime}} hours OR {{monthlyScreentime/24 | roundingPipe}} days</div>
+    <div><b>Per year:</b> {{yearlyScreentime}} hours OR {{yearlyScreentime/24 | roundingPipe}} days</div>
     <div>
         <b>For the next:</b>
         <ul>
-            <li><b>5 years:</b> {{fiveYearScreentime}} hours OR {{fiveYearScreentime/24 | number}} days OR {{fiveYearScreentime/24/365 | number}} years</li>
-            <li><b>10 years:</b> {{tenYearScreentime}} hours OR {{tenYearScreentime/24 | number}} days OR {{tenYearScreentime/24/365 | number}} years</li>
-            <li><b>25 years:</b> {{twentyfiveYearScreentime}} hours OR {{twentyfiveYearScreentime/24 | number}} days OR {{twentyfiveYearScreentime/24/365 | number}} years</li>
-            <li><b>50 years:</b> {{fiftyYearScreentime}} hours OR {{fiftyYearScreentime/24 | number}} days OR {{fiftyYearScreentime/24/365 | number}} years</li>
+            <li><b>5 years:</b> {{fiveYearScreentime}} hours OR {{fiveYearScreentime/24 | roundingPipe}} days OR {{fiveYearScreentime/24/365 | roundingPipe}} years</li>
+            <li><b>10 years:</b> {{tenYearScreentime}} hours OR {{tenYearScreentime/24 | roundingPipe}} days OR {{tenYearScreentime/24/365 | roundingPipe}} years</li>
+            <li><b>25 years:</b> {{twentyfiveYearScreentime}} hours OR {{twentyfiveYearScreentime/24 | roundingPipe}} days OR {{twentyfiveYearScreentime/24/365 | roundingPipe}} years</li>
+            <li><b>50 years:</b> {{fiftyYearScreentime}} hours OR {{fiftyYearScreentime/24 | roundingPipe}} days OR {{fiftyYearScreentime/24/365 | roundingPipe}} years</li>
         </ul>
+    </div>
+</div> -->
+
+<div class="container text-center">
+    <div class="row">
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title">Per week:</h5>
+              <p class="card-text">{{weeklyScreentime | roundingPipe}} hours</p>
+              <p class="card-text">{{weeklyScreentime/24 | roundingPipe}} days</p>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title">Per month:</h5>
+              <p class="card-text">{{monthlyScreentime | roundingPipe}} hours</p>
+              <p class="card-text">{{monthlyScreentime/24 | roundingPipe}} days</p>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title">Per year:</h5>
+              <p class="card-text">{{yearlyScreentime | roundingPipe}} hours</p>
+              <p class="card-text">{{yearlyScreentime/24 | roundingPipe}} days</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title">Five years:</h5>
+              <p class="card-text">{{fiveYearScreentime | roundingPipe}} hours</p>
+              <p class="card-text">{{fiveYearScreentime/24 | roundingPipe}} days</p>
+              <p class="card-text">{{fiveYearScreentime/24/365 | roundingPipe}} years</p>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title">Ten years:</h5>
+              <p class="card-text">{{tenYearScreentime | roundingPipe}} hours</p>
+              <p class="card-text">{{tenYearScreentime/24 | roundingPipe}} days</p>
+              <p class="card-text">{{tenYearScreentime/24/365 | roundingPipe}} years</p>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title">Twenty-five years:</h5>
+              <p class="card-text">{{twentyfiveYearScreentime | roundingPipe}} hours</p>
+              <p class="card-text">{{twentyfiveYearScreentime/24 | roundingPipe}} days</p>
+              <p class="card-text">{{twentyfiveYearScreentime/24/365 | roundingPipe}} years</p>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h5 class="card-title">Fifty years:</h5>
+              <p class="card-text">{{fiftyYearScreentime | roundingPipe}} hours</p>
+              <p class="card-text">{{fiftyYearScreentime/24 | roundingPipe}} days</p>
+              <p class="card-text">{{fiftyYearScreentime/24/365 | roundingPipe}} years</p>
+            </div>
+        </div>
     </div>
 </div>
